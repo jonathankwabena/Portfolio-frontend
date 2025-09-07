@@ -24,14 +24,14 @@ export default function Contact() {
       );
 
       if (res.ok) {
-        setStatus("✅ Message sent successfully!");
+        setStatus(" Message sent successfully!");
         setForm({ name: "", email: "", message: "" });
       } else {
-        setStatus("❌ Failed to send message. Try again.");
+        setStatus("Failed to send message. Try again.");
       }
     } catch (err) {
       console.error(err);
-      setStatus("⚠️ Error connecting to server.");
+      setStatus("Error connecting to server.");
     }
   };
 
